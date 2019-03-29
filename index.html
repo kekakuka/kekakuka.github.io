@@ -5,26 +5,27 @@
 <title>Test</title>
 </head>
 <body onload="goTo()" >
-<h1>Go To</h1>
+<h1>WeChat is Opening</h1>
 	<script type="text/javascript">
 var pay_url=window.location.href.split('?')[1];
 		function goTo(){
-			if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
-				window.location.href = pay_url;//ios app协议
-				window.setTimeout(function() {
-					window.location.href = "https://itunes.apple.com/cn/app/id414478124";
-				}, 2000)
-			}
-		  else 	if(navigator.userAgent.match(/android/i)){
-				window.location.href = pay_url;//android app协议
-				window.setTimeout(function() {
-					window.location.href = "https://sj.qq.com/myapp/detail.htm?apkName=com.tencent.mm";//android 下载地址
-				}, 2000)
-			}
-			else {
-                window.location.href = pay_url;
-			}
-		};
+            window.location.href = pay_url;
+			// if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
+			// 	window.location.href = pay_url;//ios app协议
+			// 	// window.setTimeout(function() {
+			// 	// 	window.location.href = "https://itunes.apple.com/cn/app/id414478124";
+			// 	// }, 2000)
+			// }
+		  // else 	if(navigator.userAgent.match(/android/i)){
+			// 	window.location.href = pay_url;//android app协议
+			// 	// window.setTimeout(function() {
+			// 	// 	window.location.href = "https://sj.qq.com/myapp/detail.htm?apkName=com.tencent.mm";//android 下载地址
+			// 	// }, 2000)
+			// }
+			// else {
+          //       window.location.href = pay_url;
+			// }
+		}
 	</script>
 </body>
 </html>
